@@ -20,3 +20,7 @@ function sandwichAdditonalPrice(option){
   }else{
     totalCost+=3;
   }
+
+  $(document).ready(function() {
+  $("form#user-form").submit(function(event){
+  event.preventDefault();
