@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<link href="css/styles.css" rel="stylesheet">
-<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script src="js/scripts.js"></script>
+  <link href="css/styles.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
     <title>ny-deli</title>
   </head>
   <body>
@@ -56,49 +56,79 @@
         </div>
     </div>
 
+    <div class="container">
+      <form id="user-form" class="form-group" >
+        <label for="new-user">Your Name:</label>
+        <input id="new-user" class="form-control" type="text" >
 
 
 
-    <div class="form-group">
-      <label for="Bread"> Please choose bread
-        <select class="form-control" id="bread">
-          <option value="1">Rye</option>
-          <option value="2">Italian</option>
-          <option value="3">Roll</option>
-      </select>
-      </label>
+        <!-- time -->
+        <div class="form-group">
+          <label for="breadType"> Please choose bread
+            <select class="form-control" id="breadType">
+              <option value="1">Italian</option>
+              <option value="2">Rye</option>
+              <option value="3">Bagel</option>
+              <option value="4">Roll</option>
+            </select>
+          </label>
+
+        </div>
+
+
+        <!-- movie -->
+        <div class="form-group">
+
+          <label for="meatChoice"> Please choose your meats
+            <select class="form-control" id="meatChoice">
+              <option value="1">Pastrami</option>
+              <option value="2">Cornbeef</option>
+              <option value="3">Roastbeef</option>
+            </select>
+          </label>
+        </div>
+
+
+        <div class="form-group">
+
+          <label for="cheeseChoice"> Please choose your meats
+            <select class="form-control" id="chesseChoice">
+              <option value="1">Swiss</option>
+              <option value="2">American</option>
+              <option value="3">Chadder</option>
+            </select>
+          </label>
+        </div>
+
+
+
+        <button class="btn form-control" type="submit" name="button">SUBMIT</button>
+      </form>
     </div>
+    <div class="container rules">
+      <h2>Pastrami Sandwich</h2>
+      <ul>
+        <li>plain $15</li>
+        <li>with cheese $20</li>
+        <li>Loaded $30</li>
+      </ul>
+      <h2>Roastbeef Sandwich</h2>
+      <ul>
+        <li>plain $15</li>
+        <li>with cheese $20</li>
+        <li>Loaded $30</li>
+      </ul>
+      <h2>Cornbeef Sandwich</h2>
+      <ul>
+        <li>plain $15</li>
+        <li>with cheese $20</li>
+        <li>Loaded $30</li>
 
+      </ul>
+      <p id="listDisplay">
 
-
-    <div class="form-group">
-      <label for="Meats"> Please choose meats
-        <select class="form-control" id="meats">
-          <option value="1">Pastrami</option>
-          <option value="2">Cornbeef</option>
-          <option value="3">Roastbeef</option>
-          <option value="4">Turkey</option>
-        </select>
-      </label>
+      </p>
     </div>
-
-
-
-    <div class="form-group">
-      <label for="Chesse"> Please choose Cheese
-        <select class="form-control" id="cheese">
-          <option value="1">Swiss</option>
-          <option value="2">American</option>
-          <option value="3">Cheddar</option>
-        </select>
-      </label>
-    </div>
-
-
-    <button class="btn form-control" type="submit" name="button">SUBMIT</button>
-
-
-
-
   </body>
 </html>
