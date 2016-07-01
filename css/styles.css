@@ -1,9 +1,11 @@
 .carousel-inner > .item > img {
     margin: 0 auto;
 }
+
 .carousel-inner img{
 width: 300px;
+}
 
-
-
+body {
+    background-color: 	#FFDEAD;
 }
