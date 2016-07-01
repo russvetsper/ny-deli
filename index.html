@@ -22,7 +22,7 @@
         </ol>
         <div class="carousel-inner" role="listbox">
           <div class="item active">
-            <img src="img/cheese.jpg" alt="pictures"class="img-responsive img-rpunded">
+            <img src="img/cheese.jpg" alt="pictures"class="img-responsive img-runded">
             <div class="carousel-caption">
               cheese
             </div>
@@ -57,78 +57,86 @@
     </div>
 
     <div class="container">
-      <form id="user-form" class="form-group" >
-        <label for="new-user">Your Name:</label>
-        <input id="new-user" class="form-control" type="text" >
+     <form id="user-form" class="form-group" >
+       <label for="new-user">Your Name:</label>
+       <input id="new-user" class="form-control" type="text" >
+
+       <label for="sandwichAmount">How many sandwiches?:</label>
+          <input id="ageAdult" class="form-control"  type="number" value="0">
+
+
+       <!-- time -->
+       <div class="form-group">
+         <label for="breadType"> Please choose bread
+           <select class="form-control" id="breadType">
+             <option value="1">Italian</option>
+             <option value="2">Rye</option>
+             <option value="3">Bagel</option>
+             <option value="4">Roll</option>
+           </select>
+         </label>
+
+       </div>
+
+
+       <!-- movie -->
+       <div class="form-group">
+
+         <label for="meatChoice"> Please choose your meats
+           <select class="form-control" id="meatChoice">
+             <option value="1">Pastrami</option>
+             <option value="2">Cornbeef</option>
+             <option value="3">Roastbeef</option>
+           </select>
+         </label>
+       </div>
+
+
+       <div class="form-group">
+
+         <label for="cheeseChoice"> Please choose your meats
+           <select class="form-control" id="chesseChoice">
+             <option value="1">Swiss</option>
+             <option value="2">American</option>
+             <option value="3">Chadder</option>
+           </select>
+         </label>
+       </div>
 
 
 
-        <!-- time -->
-        <div class="form-group">
-          <label for="breadType"> Please choose bread
-            <select class="form-control" id="breadType">
-              <option value="1">Italian</option>
-              <option value="2">Rye</option>
-              <option value="3">Bagel</option>
-              <option value="4">Roll</option>
-            </select>
-          </label>
-
-        </div>
-
-
-        <!-- movie -->
-        <div class="form-group">
-
-          <label for="meatChoice"> Please choose your meats
-            <select class="form-control" id="meatChoice">
-              <option value="1">Pastrami</option>
-              <option value="2">Cornbeef</option>
-              <option value="3">Roastbeef</option>
-            </select>
-          </label>
-        </div>
-
-
-        <div class="form-group">
-
-          <label for="cheeseChoice"> Please choose your meats
-            <select class="form-control" id="chesseChoice">
-              <option value="1">Swiss</option>
-              <option value="2">American</option>
-              <option value="3">Chadder</option>
-            </select>
-          </label>
-        </div>
+       <button class="btn form-control" type="submit" name="button">SUBMIT</button>
+     </form>
+   </div>
+   <div class="container rules">
+     <h2>Pastrami Sandwich</h2>
+     <ul>
+       <li>plain $15</li>
+       <li>with cheese $20</li>
+       <li>Loaded $30</li>
+     </ul>
+     <h2>Roastbeef Sandwich</h2>
+     <ul>
+       <li>plain $15</li>
+       <li>with cheese $20</li>
+       <li>Loaded $30</li>
+     </ul>
+     <h2>Cornbeef Sandwich</h2>
+     <ul>
+       <li>plain $15</li>
+       <li>with cheese $20</li>
+       <li>Loaded $30</li>
 
 
 
-        <button class="btn form-control" type="submit" name="button">SUBMIT</button>
-      </form>
-    </div>
-    <div class="container rules">
-      <h2>Pastrami Sandwich</h2>
-      <ul>
-        <li>plain $15</li>
-        <li>with cheese $20</li>
-        <li>Loaded $30</li>
-      </ul>
-      <h2>Roastbeef Sandwich</h2>
-      <ul>
-        <li>plain $15</li>
-        <li>with cheese $20</li>
-        <li>Loaded $30</li>
-      </ul>
-      <h2>Cornbeef Sandwich</h2>
-      <ul>
-        <li>plain $15</li>
-        <li>with cheese $20</li>
-        <li>Loaded $30</li>
+     <p id="listDisplay">
 
-      </ul>
-      <p id="listDisplay">
+     </p>
+   </div>
+   <div class="container">
+     <ul id="sandwichDisplay"></ul>
+   </div>
 
-      </p>
-    </div>
-  </body>
-</html>
+ </body>
+
+ </html>
