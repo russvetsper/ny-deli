@@ -1,5 +1,5 @@
 var totalCost;
-function sandwich(meats,cheese,vegi,bread,sandwichPrice){
+function sandwich(meats,cheese,vegi,bread,cost){
 this.meats=meats;
 this.cheese=cheese;
 this.vegi=vegi;
@@ -16,11 +16,21 @@ sandwich.prototype.sandwichAmount=function(){
   }
 
 }
-var pastrami=new sandwich("pastrami",15,20,30);
-var roastbeef=new sandwich("roastbeef"15,20,30);
-var cornbeef=new sandwich("cornbeef",15,20,30);
+var pastrami=new sandwich("pastrami","swiss","no","italian",15);
+var roastbeef=new sandwich("roastbeef","chadder","no","italaian",15);
+var cornbeef=new sandwich("cornbeef","american","no","italaian",30);
 
+function aditionalPrices(option){
+  if (option==="1"){
+    totalPrice=totalPrice+5;
+  }else if (option==="2"){
+    totalPrice=totalPrice+5;
+  }else if (option==="3"){
+    totalPrice+=5;
+  }else{
+    totalPrice+=10
 
+}
 
   }
 
