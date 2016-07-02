@@ -1,12 +1,12 @@
 var totalCost;
 function sandwich(meats,cheese,vegi,bread,sandwichPrice){
-this.title=meats;
+this.meats=meats;
 this.cheese=cheese;
 this.vegi=vegi;
 this.bread=bread;
 this.sandwichPrice=sandwichPrice;
 }
-sandwcih.prototype.totalcost=function(){
+sandwich.prototype.totalcost=function(){
   return this.cost*this.meats;
 }
 
