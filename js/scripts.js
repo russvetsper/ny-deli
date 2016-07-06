@@ -1,24 +1,24 @@
 var totalCost;
-function sandwich(meats,cheese,vegi,bread,cost){
+function sandwich(meats,cheese,vegetables,bread,sandwichPrice){
 this.meats=meats;
 this.cheese=cheese;
-this.vegi=vegi;
+this.vegi=vegetables;
 this.bread=bread;
 this.sandwichPrice=sandwichPrice;
 }
 sandwich.prototype.totalcost=function(){
-  return this.cost*this.meats;
+  return this.sandwichPrice * this.meats;
 }
 
-sandwich.prototype.sandwichAmount=function(){
-  if(this.meats.length<1){
+sandwich.prototype.sandwichPrice=function(){
+  if(this.meats.length>1){
       return+5;
   }
 
 }
-var pastrami=new sandwich("pastrami","swiss","no","italian",15);
-var roastbeef=new sandwich("roastbeef","chadder","no","italaian",15);
-var cornbeef=new sandwich("cornbeef","american","no","italaian",30);
+// var pastrami=new sandwich("pastrami","swiss","no","italian",15);
+// var roastbeef=new sandwich("roastbeef","chadder","no","italaian",15);
+// var cornbeef=new sandwich("cornbeef","american","no","italaian",15);
 
 function aditionalPrices(option){
   if (option==="1"){
@@ -28,12 +28,23 @@ function aditionalPrices(option){
   }else if (option==="3"){
     totalPrice+=5;
   }else{
-    totalPrice+=10
+    totalPrice+=10;
 
 }
 
   }
 
   $(document).ready(function() {
-  $("form#user-form").submit(function(event){
-  event.preventDefault();
+  $("form#user-form").submit(function(event) {
+   event.preventDefault();
+
+
+  $("#breadType").val();
+  $("#meatChoice").val();
+  $("#cheeseChoice").val();
+  $("#vegetables").val();
+
+
+
+  });
+});
