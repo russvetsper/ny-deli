@@ -1,13 +1,15 @@
 var totalCost;
-function Sandwich(meats,cheese,vegetables,bread,sandwichPrice){
+function Sandwich(meats,cheese,vegetables,bread,sandwichAmount){
 this.meats=meats;
 this.cheese=cheese;
 this.vegetables=vegetables;
 this.bread=bread;
+this.sandwichAmount=sandwichAmount;
 this.sandwichPrice=0;
 }
 Sandwich.prototype.totalcost=function(){
   this.sandwichPrice += this.meats+this.cheese +this.bread+this.vegetables ;
+  this.sandwichPrice*=this.sandwichAmount;
 
 }
 
@@ -24,12 +26,15 @@ Sandwich.prototype.totalcost=function(){
 
    var vegetables= parseInt( $("#vegetablesChoice").val());
 
+   var sandwichAmount= parseInt($("#sandwichAmount").val());
 
-   var sandwichInput = new Sandwich(meatChoice, cheeseChoice, vegetables, breadType);
+
+   var sandwichInput = new Sandwich(meatChoice, cheeseChoice, vegetables, breadType,sandwichAmount);
 
   sandwichInput.totalcost();
 
-  $("#output").text(sandwichInput.sandwichPrice)
+  $("#output").text("TOTAL $"+sandwichInput.sandwichPrice)
+
 
   });
 });
