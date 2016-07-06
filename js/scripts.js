@@ -16,9 +16,7 @@ sandwich.prototype.sandwichPrice=function(){
   }
 
 }
-// var pastrami=new sandwich("pastrami","swiss","no","italian",15);
-// var roastbeef=new sandwich("roastbeef","chadder","no","italaian",15);
-// var cornbeef=new sandwich("cornbeef","american","no","italaian",15);
+
 
 function aditionalPrices(option){
   if (option==="1"){
@@ -38,11 +36,14 @@ function aditionalPrices(option){
   $("form#user-form").submit(function(event) {
    event.preventDefault();
 
+   var breadType= $("#breadType").val();
+   var meatChoice= $("#meatChoice").val();
+   var cheeseChoice= $("#cheeseChoice").val();
+   var vegetables= $("#vegetables").val();
 
-  $("#breadType").val();
-  $("#meatChoice").val();
-  $("#cheeseChoice").val();
-  $("#vegetables").val();
+
+   var sandwichInput = new sandwich(meatChoice, cheeseChoice, vegetables, breadType,sandwichPrice);
+ console.log(sandwichInput)
 
 
 
