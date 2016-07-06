@@ -29,7 +29,7 @@ Sandwich.prototype.totalcost=function(){
 
   sandwichInput.totalcost();
 
-
+  $("#output").text(sandwichInput.sandwichPrice)
 
   });
 });
